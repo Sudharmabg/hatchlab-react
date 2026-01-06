@@ -1,0 +1,340 @@
+/* Careers Page Styles */
+
+.careers {
+  position: relative;
+  min-height: 100vh;
+  background: var(--background-dark);
+}
+
+#careers-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.careers > .careers-hero {
+  position: relative;
+  z-index: 2;
+}
+
+.careers > section:not(.careers-hero) {
+  position: relative;
+  z-index: 2;
+  background: var(--background-dark);
+}
+
+/* Hero Section */
+.careers-hero {
+  padding: 150px 0 100px;
+  text-align: center;
+}
+
+.careers-main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  animation: continuousBounce 2s ease-in-out infinite;
+}
+
+.white-text {
+  color: var(--text-white);
+}
+
+.yellow-text {
+  color: var(--primary-yellow);
+}
+
+@keyframes continuousBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Internships Section */
+.internships-section {
+  padding: 80px 0;
+  margin-left: 25px;
+}
+
+.internships-title {
+  font-size: 2.5rem;
+  color: var(--primary-yellow);
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.internships-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary-yellow) 20%,
+    var(--primary-yellow) 80%,
+    transparent 100%
+  );
+}
+
+.internships-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.internships-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.1);
+}
+
+.card-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-list li {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.benefits-list li::before {
+  content: "•";
+  color: var(--primary-yellow);
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+}
+
+.contact-section {
+  margin-top: 40px;
+}
+
+.drop-text {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+}
+
+.email-button {
+  background: var(--text-white);
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: none;
+  box-shadow: none;
+}
+
+.email-button:hover {
+  background: var(--text-white);
+  color: #000;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Join Team Section */
+.join-team-section {
+  padding: 80px 0 250px;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.join-team-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.join-team-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.1);
+}
+
+.join-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.join-title {
+  font-size: 2.5rem;
+  color: var(--primary-yellow);
+  font-weight: 700;
+  margin: 0 0 60px 0;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.join-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary-yellow) 20%,
+    var(--primary-yellow) 80%,
+    transparent 100%
+  );
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .careers-hero {
+    padding: 120px 0 80px;
+  }
+
+  .careers-main-title {
+    font-size: 2.5rem;
+  }
+
+  .internships-section,
+  .join-team-section {
+    margin-left: 20px;
+  }
+
+  .internships-title,
+  .join-title {
+    font-size: 1.8rem;
+  }
+
+  .internships-card,
+  .join-team-card {
+    padding: 30px 20px;
+    margin: 0 20px;
+  }
+
+  .card-subtitle,
+  .join-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .benefits-list li {
+    font-size: 1rem;
+  }
+
+  .drop-text {
+    font-size: 1rem;
+  }
+
+  .email-button {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-hero {
+    padding: 100px 0 60px;
+  }
+
+  .careers-main-title {
+    font-size: 2rem;
+  }
+
+  .internships-title,
+  .join-title {
+    font-size: 1.5rem;
+  }
+
+  .internships-card,
+  .join-team-card {
+    padding: 25px 15px;
+    margin: 0 15px;
+  }
+
+  .card-subtitle,
+  .join-subtitle {
+    font-size: 1rem;
+  }
+
+  .benefits-list li {
+    font-size: 1rem;
+  }
+
+  .email-button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+/* MacBook Air Optimizations */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .careers-main-title {
+    font-size: 3.2rem;
+  }
+
+  .internships-title,
+  .join-title {
+    font-size: 1.8rem;
+  }
+
+  .internships-card,
+  .join-team-card {
+    max-width: 700px;
+    padding: 40px;
+  }
+
+  .card-subtitle,
+  .join-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .benefits-list li {
+    font-size: 1rem;
+  }
+
+  .email-button {
+    font-size: 1rem;
+    padding: 11px 28px;
+  }
+}

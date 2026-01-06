@@ -1,0 +1,113 @@
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import './Header.css';
+
+const Header = () => {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
+
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const closeModal = () => {
+    setIsContactModalOpen(false);
+  };
+
+  useEffect(() => {
+    const handleEscapeKey = (event) => {
+      if (event.key === 'Escape' && isContactModalOpen) {
+        closeModal();
+      }
+    };
+
+    if (isContactModalOpen) {
+      document.addEventListener('keydown', handleEscapeKey);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscapeKey);
+    };
+  }, [isContactModalOpen]);
+
+  return (
+    <>
+      <header className="main-header">
+        <div className="header-logo">
+          <Link to="/" onClick={handleNavClick}>
+            <img src="/images/logo.png" alt="Hatchlab Logo" />
+          </Link>
+          <Link to="/" className="brand-name" onClick={handleNavClick}>
+            Hatchlab Innovations
+          </Link>
+        </div>
+        
+        <nav className="header-nav">
+          <Link 
+            to="/about" 
+            className={isActive('/about') ? 'active' : ''}
+            onClick={handleNavClick}
+          >
+            About
+          </Link>
+          <Link 
+            to="/services" 
+            className={isActive('/services') ? 'active' : ''}
+            onClick={handleNavClick}
+          >
+            Service
+          </Link>
+          <Link 
+            to="/careers" 
+            className={isActive('/careers') ? 'active' : ''}
+            onClick={handleNavClick}
+          >
+            Career
+          </Link>
+          <Link 
+            to="/contact" 
+            className={isActive('/contact') ? 'active' : ''}
+            onClick={handleNavClick}
+          >
+            Contact
+          </Link>
+          <button 
+            className="get-in-touch-btn"
+            onClick={() => setIsContactModalOpen(true)}
+          >
+            Get In Touch
+          </button>
+        </nav>
+      </header>
+
+      {/* Contact Modal */}
+      {isContactModalOpen && (
+        <div className="contact-modal" onClick={closeModal}>
+          <div className="contact-modal-content" onClick={(e) => e.stopPropagation()}>
+            <span 
+              className="close-contact-modal"
+              onClick={closeModal}
+            >
+              &times;
+            </span>
+            <h3>Get In Touch</h3>
+            <div className="contact-info-item">
+              <a href="tel:+918276057111">
+                <i className="fas fa-mobile-alt phone-icon"></i> +91 8276057111
+              </a>
+            </div>
+            <div className="contact-info-item">
+              <a href="mailto:info@hatchlabinnovations.com">
+                <i className="fas fa-envelope email-icon"></i> info@hatchlabinnovations.com
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default Header;

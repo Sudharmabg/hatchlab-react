@@ -1,0 +1,205 @@
+/* About Page Styles */
+
+/* Hero Section */
+.about .hero-section {
+  height: 60vh;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background: var(--background-dark);
+  align-items: center;
+  justify-content: center;
+}
+
+.about .hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.about .hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+.about .word {
+  display: inline-block;
+  margin-right: 20px;
+  opacity: 0;
+  animation: dropAndBounce 0.8s ease-out forwards;
+}
+
+.about .word.bouncing {
+  animation: continuousBounce 2s ease-in-out infinite;
+  opacity: 1;
+}
+
+.about .word:nth-child(1) { animation-delay: 0s; }
+.about .word:nth-child(2) { animation-delay: 0.1s; }
+
+.about .word.white {
+  color: var(--text-white);
+}
+
+.about .word.yellow {
+  color: var(--primary-yellow);
+}
+
+/* About Content */
+.about-content {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 60px 0;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Vision & Mission Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.vm-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--primary-yellow);
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  transition: all 0.3s ease;
+}
+
+.vm-card:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.4);
+}
+
+.vm-card .card-icon {
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto 15px auto;
+  position: relative;
+  border: none;
+  background: none;
+}
+
+.vm-card .card-icon i {
+  font-size: 2.2rem;
+  color: #FFFF00;
+}
+
+@media (min-width: 769px) {
+  .vm-card .card-icon i {
+    font-size: 2.2rem;
+    color: #FFFF00;
+  }
+}
+
+.vm-card:hover .card-icon {
+  transform: scale(1.1);
+}
+
+.vm-card h3 {
+  font-size: 1.1rem;
+  color: var(--text-white);
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.vm-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin: 0;
+  text-align: left;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  text-align: left;
+}
+
+.quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+blockquote {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: var(--text-white);
+  margin: 40px 0;
+  position: relative;
+  font-style: italic;
+  text-align: center;
+}
+
+.quote-description {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  line-height: 1.7;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .vm-card {
+    padding: 30px 20px;
+  }
+
+  blockquote {
+    font-size: 1.4rem;
+    padding: 0 20px;
+  }
+
+  .quote-description {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+
+/* MacBook Air Optimizations */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .about .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .cards-grid {
+    max-width: 700px;
+  }
+}
