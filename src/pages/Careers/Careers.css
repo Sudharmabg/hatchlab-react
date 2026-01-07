@@ -90,7 +90,7 @@
 
 .internships-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 2px solid #ffffff;
   border-radius: 15px;
   padding: 50px;
   max-width: 800px;
@@ -101,8 +101,8 @@
 
 .internships-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 255, 0, 0.2);
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.1);
+  border-color: #FFFF00;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
 }
 
 .card-subtitle {
@@ -179,7 +179,7 @@
 
 .join-team-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 2px solid #ffffff;
   border-radius: 15px;
   padding: 50px;
   max-width: 800px;
@@ -190,8 +190,8 @@
 
 .join-team-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 255, 0, 0.2);
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.1);
+  border-color: #FFFF00;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
 }
 
 .join-subtitle {
