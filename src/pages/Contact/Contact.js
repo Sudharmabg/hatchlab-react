@@ -45,17 +45,7 @@ const Contact = () => {
     };
   }, [isContactModalOpen]);
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
 
   return (
     <div className="contact">

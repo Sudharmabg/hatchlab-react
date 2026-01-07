@@ -140,7 +140,7 @@ const Home = () => {
       clearInterval(initiativeInterval);
     };
     }
-  }, []);
+  }, [initiatives.length]);
 
   const whyCards = [
     {
