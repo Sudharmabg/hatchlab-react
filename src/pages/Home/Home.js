@@ -290,7 +290,7 @@ const Home = () => {
                     ))}
                   </ul>
                 </div>
-                <Link to="/services" className="arrow-btn">➜</Link>
+                <Link to={index === 0 ? "/inception" : "/services"} className="arrow-btn">➜</Link>
               </div>
             ))}
           </div>

@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import Services from './pages/Services/Services';
 import Careers from './pages/Careers/Careers';
 import Contact from './pages/Contact/Contact';
+import Inception from './pages/Inception/Inception';
 import './App.css';
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/inception" element={<Inception />} />
           </Routes>
         </main>
         <Footer />
