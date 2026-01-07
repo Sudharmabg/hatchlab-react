@@ -2,12 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Contact.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   useEffect(() => {
