@@ -91,23 +91,21 @@
   font-weight: 700;
   position: relative;
   display: inline-block;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
+  text-align: center;
+  width: 100%;
 }
 
 .section-heading::after {
-  content: "";
+  content: '';
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
-  width: 50%;
+  width: 80%;
   height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--primary-yellow) 20%,
-    var(--primary-yellow) 80%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg, transparent 0%, var(--primary-yellow) 20%, var(--primary-yellow) 80%, transparent 100%);
+  transform: translateX(-50%);
+  opacity: 0.85;
 }
 
 /* Column containers */
