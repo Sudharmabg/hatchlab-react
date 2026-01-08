@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-yellow: #FFFF00;
+  --primary-yellow: rgba(255, 255, 0,1);
   --background-dark: #0f0f16;
   --header-bg: rgba(23, 22, 31, 0.95);
   --text-white: #ffffff;
-  --text-gray: #ddd;
+  --text-gray: #ffffff;
   --card-bg: rgba(255, 255, 255, 0.05);
   --border-color: rgba(255, 255, 255, 0.08);
   --yellow-border: rgba(255, 255, 0, 0.2);
@@ -59,7 +59,7 @@ body {
 
 body {
   font-family: 'Lora', serif;
-  background-color: var(--background-dark);
+  background-color: rgba(23, 22, 31, 0.95);
   color: var(--text-white);
   line-height: 1.6;
   overflow-x: hidden;

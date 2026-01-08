@@ -8,6 +8,8 @@ import Services from './pages/Services/Services';
 import Careers from './pages/Careers/Careers';
 import Contact from './pages/Contact/Contact';
 import Inception from './pages/Inception/Inception';
+import Ventures from './pages/Ventures/Ventures';
+import One from './pages/One/One';
 import './App.css';
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/inception" element={<Inception />} />
+            <Route path="/ventures" element={<Ventures />} />
+            <Route path="/one" element={<One />} />
           </Routes>
         </main>
         <Footer />

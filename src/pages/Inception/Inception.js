@@ -141,8 +141,8 @@ const Inception = () => {
         <div className="container">
           <p className="vertical-label">VERTICAL 01</p>
           <h1 className={`hero-title ${animatedWords ? 'animated' : ''}`}>
-            <span className="word yellow">HATCHLAB</span>
-            <span className="word white">INCEPTION</span>
+            <span className="word yellow">Hatchlab</span>
+            <span className="word white">Inception</span>
           </h1>
           <p className="hero-subtitle">The Venture Studio Incubator</p>
         </div>
@@ -150,7 +150,7 @@ const Inception = () => {
 
       <section className="intro-section section">
         <div className="container">
-          <h2 className="section-title">HATCHLAB INCEPTION</h2>
+          <h2 className="section-title">Hatchlab Inception</h2>
           <p className="intro-description">
             The engine room of enterprise creation. We transform raw concepts into scalable businesses through a rigorous, hands-on process of validation, building, and launching.
           </p>

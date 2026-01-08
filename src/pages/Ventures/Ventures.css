@@ -1,0 +1,710 @@
+.ventures {
+  background-color: rgba(23, 22, 31, 0.95);
+  color: #fff;
+  font-family: 'Lora', serif;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 60vh;
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.vertical-label {
+  font-size: 0.9rem;
+  color: #FFFF00;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  text-align: center;
+  animation: continuousBounce 2s ease-in-out infinite;
+}
+
+.word {
+  display: inline-block;
+  margin-right: 20px;
+  opacity: 0;
+  animation: dropAndBounce 0.8s ease-out forwards;
+}
+
+.word.animated {
+  animation: continuousBounce 2s ease-in-out infinite;
+  opacity: 1;
+}
+
+.word.white { color: #fff; }
+.word.yellow { color: #FFFF00; }
+
+@keyframes dropAndBounce {
+  0% { opacity: 0; transform: translateY(-100px); }
+  60% { opacity: 1; transform: translateY(10px); }
+  80% { transform: translateY(-5px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes continuousBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #ddd;
+  margin-top: 30px;
+}
+
+/* Section Styles */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #FFFF00;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 18px;
+  width: 100%;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #FFFF00 20%, #FFFF00 80%, transparent 100%);
+  transform: translateX(-50%);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* Introduction Section */
+.intro-section {
+  background: rgba(23, 22, 31, 0.95);
+}
+
+.intro-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Introduction Cards */
+.intro-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.intro-card:hover {
+  transform: translateY(-5px);
+  border-color: #FFFF00;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+}
+
+.intro-card-icon {
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 15px;
+}
+
+.intro-card-icon i {
+  font-size: 2rem;
+  color: #FFFF00;
+}
+
+.intro-card-content {
+  text-align: center;
+  width: 100%;
+}
+
+.intro-card-content h3 {
+  font-size: 1rem;
+  color: #FFFF00;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.intro-card-content p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ddd;
+  margin: 0;
+  text-align: center;
+}
+
+/* Investment Vehicles Section */
+.vehicles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.vehicle-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  border-color: #FFFF00;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+}
+
+.vehicle-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.vehicle-card:hover .vehicle-icon {
+  transform: scale(1.1);
+}
+
+.vehicle-icon i {
+  font-size: 1.8rem;
+  color: #FFFF00;
+}
+
+.vehicle-title {
+  font-size: 1.4rem;
+  color: #FFFF00;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.vehicle-subtitle {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.vehicle-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.vehicle-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 0, 0.2);
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  color: #FFFF00;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.detail-value {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Portfolio Strategy & Governance Section */
+.governance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.governance-column {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.governance-column:hover {
+  border-color: #FFFF00;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+}
+
+.governance-column-title {
+  font-size: 1.2rem;
+  color: #FFFF00;
+  margin-bottom: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.governance-column-title i {
+  font-size: 1.4rem;
+  color: #FFFF00;
+}
+
+.governance-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.governance-item {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.1);
+}
+
+.governance-item:last-child {
+  border-bottom: none;
+}
+
+.governance-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.governance-item-header i {
+  font-size: 1rem;
+  color: #FFFF00;
+  width: 20px;
+  text-align: center;
+}
+
+.governance-item h4 {
+  font-size: 1rem;
+  color: #FFFF00;
+  margin: 0;
+  font-weight: 600;
+}
+
+.governance-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ddd;
+  margin: 0;
+}
+
+/* Value Creation Approach Section */
+.value-creation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.value-creation-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.value-creation-card:hover {
+  transform: translateY(-5px);
+  border-color: #FFFF00;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+}
+
+.value-creation-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.value-creation-card:hover .value-creation-icon {
+  transform: scale(1.1);
+}
+
+.value-creation-icon i {
+  font-size: 1.8rem;
+  color: #FFFF00;
+}
+
+.value-creation-title {
+  font-size: 1.4rem;
+  color: #FFFF00;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.value-creation-subtitle {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.value-creation-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.value-creation-details {
+  text-align: left;
+}
+
+.detail-point {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+.detail-point span {
+  color: #FFFF00;
+  font-weight: 600;
+}
+
+/* Ecosystem Advantage Section */
+.ecosystem-diagram {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.ecosystem-item {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.ecosystem-item:hover {
+  transform: translateY(-5px);
+  border-color: #FFFF00;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+}
+
+.ecosystem-item.source {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.ecosystem-item.growth {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.ecosystem-item.exit {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  max-width: 300px;
+  justify-self: center;
+}
+
+.ecosystem-center {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecosystem-badge {
+  background: #4A90E2;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.ecosystem-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.ecosystem-circle.green {
+  background: #28a745;
+}
+
+.ecosystem-circle.purple {
+  background: #6f42c1;
+}
+
+.ecosystem-circle.orange {
+  background: #fd7e14;
+}
+
+.ecosystem-circle i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.ecosystem-hub {
+  width: 120px;
+  height: 120px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.ecosystem-hub::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid #FFFF00;
+  border-radius: 50%;
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.hub-content {
+  text-align: center;
+}
+
+.hub-content h3 {
+  font-size: 1.1rem;
+  margin: 0 0 5px 0;
+  color: white;
+}
+
+.hub-content p {
+  font-size: 0.7rem;
+  margin: 0;
+  color: #ccc;
+}
+
+.ecosystem-item h3 {
+  font-size: 1.2rem;
+  color: #FFFF00;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.ecosystem-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ddd;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .intro-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .intro-card {
+    padding: 20px;
+  }
+
+  .governance-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .governance-column {
+    padding: 20px;
+  }
+
+  .value-creation-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .value-creation-card {
+    padding: 25px;
+  }
+
+  .ecosystem-diagram {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+  }
+  
+  .ecosystem-item.source,
+  .ecosystem-item.growth,
+  .ecosystem-item.exit {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .ecosystem-center {
+    grid-column: 1;
+    grid-row: auto;
+    order: -1;
+  }
+
+  .vehicles-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .vehicle-card {
+    padding: 25px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* MacBook Air Optimizations */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .vehicles-grid {
+    max-width: 1200px;
+  }
+
+  .vehicle-card {
+    padding: 25px;
+  }
+}

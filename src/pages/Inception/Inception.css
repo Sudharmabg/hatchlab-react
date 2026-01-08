@@ -1,5 +1,5 @@
 .inception {
-  background-color: #0f0f16;
+  background-color: rgba(23, 22, 31, 0.95);
   color: #fff;
   font-family: 'Lora', serif;
 }
@@ -47,6 +47,7 @@
   position: relative;
   display: block;
   text-align: center;
+  animation: continuousBounce 2s ease-in-out infinite;
 }
 
 .word {
@@ -92,23 +93,22 @@
   color: #FFFF00;
   margin-bottom: 15px;
   font-weight: 700;
-  text-align: left;
+  text-align: center !important;
   position: relative;
   display: inline-block;
   padding-bottom: 18px;
-  width: auto;
+  width: 100% !important;
 }
 
 .section-title::after {
   content: '';
   position: absolute;
-  left: 0;
+  left: 50% !important;
   bottom: 0;
-  width: 100%;
+  width: 250px !important;
   height: 2px;
   background: linear-gradient(90deg, transparent 0%, #FFFF00 20%, #FFFF00 80%, transparent 100%);
-  transform: translateX(0);
-  opacity: 0.85;
+  transform: translateX(-50%) !important;
 }
 
 .section-subtitle {
@@ -152,6 +152,7 @@
   border-radius: 12px;
   padding: 25px;
   transition: all 0.3s ease;
+  min-width: 280px;
 }
 
 .process-step:hover {
@@ -462,6 +463,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.value-benefits li i {
+  color: #28a745 !important;
+  font-size: 0.8rem;
 }
 
 .value-card {

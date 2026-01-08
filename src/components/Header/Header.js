@@ -4,6 +4,7 @@ import './Header.css';
 
 const Header = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path) => location.pathname === path;
@@ -16,6 +17,10 @@ const Header = () => {
     setIsContactModalOpen(false);
   };
 
+  const toggleServicesDropdown = () => {
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
+
   useEffect(() => {
     const handleEscapeKey = (event) => {
       if (event.key === 'Escape' && isContactModalOpen) {
@@ -23,12 +28,21 @@ const Header = () => {
       }
     };
 
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.services-dropdown')) {
+        setIsServicesDropdownOpen(false);
+      }
+    };
+
     if (isContactModalOpen) {
       document.addEventListener('keydown', handleEscapeKey);
     }
 
+    document.addEventListener('click', handleClickOutside);
+
     return () => {
       document.removeEventListener('keydown', handleEscapeKey);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, [isContactModalOpen]);
 
@@ -48,28 +62,36 @@ const Header = () => {
           <Link 
             to="/about" 
             className={isActive('/about') ? 'active' : ''}
-            onClick={handleNavClick}
+            onClick={() => { handleNavClick(); setIsServicesDropdownOpen(false); }}
           >
             About
           </Link>
-          <Link 
-            to="/services" 
-            className={isActive('/services') ? 'active' : ''}
-            onClick={handleNavClick}
-          >
-            Service
-          </Link>
+          <div className="services-dropdown">
+            <button 
+              className={`services-toggle ${isActive('/one') || isActive('/ventures') || isActive('/inception') ? 'active' : ''}`}
+              onClick={toggleServicesDropdown}
+            >
+              Services <i className="fas fa-chevron-down"></i>
+            </button>
+            {isServicesDropdownOpen && (
+              <div className="services-dropdown-menu">
+                <Link to="/one" onClick={() => { handleNavClick(); setIsServicesDropdownOpen(false); }}>Hatchlab One</Link>
+                <Link to="/ventures" onClick={() => { handleNavClick(); setIsServicesDropdownOpen(false); }}>Hatchlab Ventures</Link>
+                <Link to="/inception" onClick={() => { handleNavClick(); setIsServicesDropdownOpen(false); }}>Hatchlab Inception</Link>
+              </div>
+            )}
+          </div>
           <Link 
             to="/careers" 
             className={isActive('/careers') ? 'active' : ''}
-            onClick={handleNavClick}
+            onClick={() => { handleNavClick(); setIsServicesDropdownOpen(false); }}
           >
             Career
           </Link>
           <Link 
             to="/contact" 
             className={isActive('/contact') ? 'active' : ''}
-            onClick={handleNavClick}
+            onClick={() => { handleNavClick(); setIsServicesDropdownOpen(false); }}
           >
             Contact
           </Link>

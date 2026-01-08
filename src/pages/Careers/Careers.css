@@ -3,7 +3,7 @@
 .careers {
   position: relative;
   min-height: 100vh;
-  background: var(--background-dark);
+  background: rgba(23, 22, 31, 0.95);
 }
 
 #careers-particles {
@@ -23,7 +23,7 @@
 .careers > section:not(.careers-hero) {
   position: relative;
   z-index: 2;
-  background: var(--background-dark);
+  background: rgba(23, 22, 31, 0.95);
 }
 
 /* Hero Section */
@@ -59,7 +59,7 @@
 /* Internships Section */
 .internships-section {
   padding: 80px 0;
-  margin-left: 25px;
+  text-align: center;
 }
 
 .internships-title {
@@ -75,9 +75,9 @@
 .internships-title::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
-  width: 100%;
+  width: 300px;
   height: 2px;
   background: linear-gradient(
     90deg,
@@ -86,6 +86,7 @@
     var(--primary-yellow) 80%,
     transparent 100%
   );
+  transform: translateX(-50%);
 }
 
 .internships-card {
@@ -107,7 +108,7 @@
 
 .card-subtitle {
   font-size: 1.1rem;
-  color: var(--text-gray);
+  color: #ffffff;
   margin-bottom: 40px;
   font-weight: 400;
 }
@@ -124,7 +125,7 @@
 
 .benefits-list li {
   font-size: 1.1rem;
-  color: var(--text-gray);
+  color: #ffffff;
   margin-bottom: 15px;
   position: relative;
   padding-left: 20px;
@@ -133,7 +134,7 @@
 
 .benefits-list li::before {
   content: "•";
-  color: var(--primary-yellow);
+  color: #ffffff;
   font-size: 1.5rem;
   position: absolute;
   left: 0px;
@@ -146,7 +147,7 @@
 
 .drop-text {
   font-size: 1.1rem;
-  color: var(--text-gray);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -173,8 +174,7 @@
 /* Join Team Section */
 .join-team-section {
   padding: 80px 0 250px;
-  text-align: left;
-  margin-left: 25px;
+  text-align: center;
 }
 
 .join-team-card {
@@ -196,7 +196,7 @@
 
 .join-subtitle {
   font-size: 1.1rem;
-  color: var(--text-gray);
+  color: #ffffff;
   margin-bottom: 30px;
   font-weight: 400;
 }
@@ -214,9 +214,9 @@
 .join-title::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
-  width: 100%;
+  width: 220px;
   height: 2px;
   background: linear-gradient(
     90deg,
@@ -225,6 +225,7 @@
     var(--primary-yellow) 80%,
     transparent 100%
   );
+  transform: translateX(-50%);
 }
 
 /* Mobile Responsive */
@@ -239,7 +240,7 @@
 
   .internships-section,
   .join-team-section {
-    margin-left: 20px;
+    text-align: center;
   }
 
   .internships-title,

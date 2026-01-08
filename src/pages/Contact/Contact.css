@@ -3,7 +3,7 @@
 .contact {
   position: relative;
   min-height: 100vh;
-  background: var(--background-dark);
+  background: rgba(23, 22, 31, 0.95);
 }
 
 #contact-particles {
@@ -71,7 +71,7 @@
 
 /* Contact Content */
 .contact-content {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(23, 22, 31, 0.95);
 }
 
 .contact-grid {
@@ -101,7 +101,7 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 80%;
+  width: 40%;
   height: 2px;
   background: linear-gradient(90deg, transparent 0%, var(--primary-yellow) 20%, var(--primary-yellow) 80%, transparent 100%);
   transform: translateX(-50%);

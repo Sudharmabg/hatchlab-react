@@ -244,7 +244,7 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">Why Hatchlab?</h2>
           <p className="section-subtitle">Our strategic differentiators in enterprise creation.</p>
-          <div className="grid-2">
+          <div className="grid-2 why-cards-grid">
             {whyCards.map((card, index) => (
               <div key={index} className="card why-card">
                 <div className="why-card-icon">
@@ -290,7 +290,11 @@ const Home = () => {
                     ))}
                   </ul>
                 </div>
-                <Link to={index === 0 ? "/inception" : "/services"} className="arrow-btn">➜</Link>
+                <Link 
+                  to={index === 0 ? "/inception" : index === 1 ? "/ventures" : "/one"} 
+                  className="arrow-btn"
+                  onClick={() => window.scrollTo(0, 0)}
+                >➜</Link>
               </div>
             ))}
           </div>

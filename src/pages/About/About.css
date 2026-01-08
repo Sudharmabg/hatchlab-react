@@ -7,7 +7,7 @@
   width: 100%;
   display: flex;
   position: relative;
-  background: var(--background-dark);
+  background: rgba(23, 22, 31, 0.95);
   align-items: center;
   justify-content: center;
 }
@@ -48,7 +48,7 @@
 
 /* About Content */
 .about-content {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(23, 22, 31, 0.95);
   padding: 60px 0;
 }
 
@@ -73,8 +73,8 @@
 
 .vm-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 2px solid var(--primary-yellow);
-  border-radius: 15px;
+  border: 2px solid #ffffff !important;
+  border-radius: 12px;
   padding: 30px 20px;
   text-align: center;
   width: 100%;
@@ -83,7 +83,9 @@
 }
 
 .vm-card:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 0, 0.4);
+  transform: translateY(-5px) !important;
+  border-color: #FFFF00 !important;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4) !important;
 }
 
 .vm-card .card-icon {
@@ -155,7 +157,7 @@ blockquote {
 
 .quote-description {
   font-size: 1.1rem;
-  color: var(--text-gray);
+  color: #ffffff;
   line-height: 1.7;
   margin-top: 30px;
   text-align: center;
@@ -202,4 +204,20 @@ blockquote {
   .cards-grid {
     max-width: 700px;
   }
+}
+
+/* Reduce underline for specific sections */
+.vision-mission .section-title::after,
+.philosophy-section .section-title::after {
+  width: 200px !important;
+  height: 2px !important;
+  background:linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary-yellow) 20%,
+    var(--primary-yellow) 80%,
+    transparent 100%
+  ) !important;
+  transform: translateX(-50%) !important;
+  display: block !important;
 }
