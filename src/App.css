@@ -3,7 +3,7 @@
 
 :root {
   --primary-yellow: rgba(255, 255, 0,1);
-  --background-dark: #0f0f16;
+  --background-dark: #002147;
   --header-bg: rgba(23, 22, 31, 0.95);
   --text-white: #ffffff;
   --text-gray: #ffffff;
@@ -59,7 +59,6 @@ body {
 
 body {
   font-family: 'Lora', serif;
-  background-color: rgba(23, 22, 31, 0.95);
   color: var(--text-white);
   line-height: 1.6;
   overflow-x: hidden;

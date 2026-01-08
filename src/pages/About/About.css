@@ -1,5 +1,10 @@
 /* About Page Styles */
 
+.about {
+  background: #1d2951 !important;
+  min-height: 100vh;
+}
+
 /* Hero Section */
 .about .hero-section {
   height: 60vh;
@@ -7,7 +12,7 @@
   width: 100%;
   display: flex;
   position: relative;
-  background: rgba(23, 22, 31, 0.95);
+  background: #1d2951 !important;
   align-items: center;
   justify-content: center;
 }
@@ -48,7 +53,7 @@
 
 /* About Content */
 .about-content {
-  background: rgba(23, 22, 31, 0.95);
+  background: #1d2951 !important;
   padding: 60px 0;
 }
 
@@ -62,6 +67,16 @@
 }
 
 /* Vision & Mission Cards */
+.vision-mission {
+  background: #1d2951 !important;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  background: #1d2951 !important;
+  text-align: left;
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

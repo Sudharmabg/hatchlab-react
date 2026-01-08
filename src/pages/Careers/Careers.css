@@ -3,7 +3,7 @@
 .careers {
   position: relative;
   min-height: 100vh;
-  background: rgba(23, 22, 31, 0.95);
+  background: #003153 !important;
 }
 
 #careers-particles {
@@ -23,7 +23,7 @@
 .careers > section:not(.careers-hero) {
   position: relative;
   z-index: 2;
-  background: rgba(23, 22, 31, 0.95);
+  background: #003153;
 }
 
 /* Hero Section */

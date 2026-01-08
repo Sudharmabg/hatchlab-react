@@ -3,7 +3,7 @@
 .contact {
   position: relative;
   min-height: 100vh;
-  background: rgba(23, 22, 31, 0.95);
+  background: #002147 !important;
 }
 
 #contact-particles {
@@ -21,6 +21,7 @@
   position: relative;
   padding: 150px 0 100px;
   text-align: center;
+  background: #002147 !important;
 }
 
 .contact-hero > * {
@@ -71,7 +72,7 @@
 
 /* Contact Content */
 .contact-content {
-  background: rgba(23, 22, 31, 0.95);
+  background: #002147 !important;
 }
 
 .contact-grid {
@@ -215,7 +216,7 @@
 }
 
 .contact-modal-content {
-  background: var(--header-bg);
+  background: #002147;
   backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: 10px;
