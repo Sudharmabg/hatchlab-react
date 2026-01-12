@@ -113,21 +113,21 @@ const Inception = () => {
   const valueProps = [
     {
       icon: "fas fa-user-tie",
-      category: "FOUNDERS & ENTREPRENEURS",
+      category: "Founders & Entrepreneurs",
       title: "Accelerate & Scale",
       description: "We remove the chaos of early-stage building. Founders get validated ideas, operational muscle, and a clear path to funding without the typical startup chaos.",
       benefits: ["Faster Validation", "Shared Services", "Capital Pathways"]
     },
     {
       icon: "fas fa-industry",
-      category: "CORPORATES", 
+      category: "Corporates", 
       title: "Innovate & Expand",
       description: "We act as an external innovation engine. Corporates can experiment with disruptive business models and spin-offs while protecting their core brand equity.",
       benefits: ["De-risked R&D", "Agile Execution", "New Revenue Streams"]
     },
     {
       icon: "fas fa-university",
-      category: "GOVERNMENT & ACADEMIA",
+      category: "Government & Academia",
       title: "Impact & Growth", 
       description: "We bridge the gap between research and market. Universities and governments partner with us to commercialize IP and drive regional economic development.",
       benefits: ["IP Commercialization", "Job Creation", "Talent Retention"]
@@ -288,7 +288,7 @@ const Inception = () => {
             <div className="deliverables-section">
               <h3 className="deliverables-title">
                 <i className="fas fa-cube"></i>
-                DELIVERABLES BY PHASE
+                Deliverables By Phase
               </h3>
               <div className="deliverables-grid">
                 <div className="deliverable-card">
@@ -321,28 +321,28 @@ const Inception = () => {
             <div className="benefits-section">
               <h3 className="benefits-title">
                 <i className="fas fa-star"></i>
-                WHY BUILD WITH US
+                Why Build With Us
               </h3>
               <div className="benefits-grid">
                 <div className="benefit-card">
                   <div className="benefit-icon">
                     <i className="fas fa-tachometer-alt"></i>
                   </div>
-                  <h4>VELOCITY</h4>
+                  <h4>Velocity</h4>
                   <p>Rapid Ideation-to-Launch cycles leveraging shared resources and validated frameworks to move fast.</p>
                 </div>
                 <div className="benefit-card">
                   <div className="benefit-icon">
                     <i className="fas fa-shield-alt"></i>
                   </div>
-                  <h4>GOVERNANCE</h4>
+                  <h4>Governance</h4>
                   <p>Centralized Legal & IP management ensures compliance and consistency from day one.</p>
                 </div>
                 <div className="benefit-card">
                   <div className="benefit-icon">
                     <i className="fas fa-expand-arrows-alt"></i>
                   </div>
-                  <h4>FLEXIBILITY</h4>
+                  <h4>Flexibility</h4>
                   <p>Clear pathways for ventures to spin-out as independent entities or seek acquisition.</p>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 .ventures {
-  background-color: rgba(23, 22, 31, 0.95);
+  background-color: #121018;
   color: #fff;
   font-family: 'Lora', serif;
 }
@@ -91,40 +91,40 @@
 .section-title {
   font-size: 2.5rem;
   color: #FFFF00;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   font-weight: 700;
-  text-align: center;
+  text-align: center !important;
   position: relative;
   display: inline-block;
-  padding-bottom: 18px;
-  width: 100%;
+  padding-bottom: 15px;
+  width: 100% !important;
 }
 
 .section-title::after {
   content: '';
   position: absolute;
-  left: 50%;
+  left: 50% !important;
   bottom: 0;
-  width: 120px;
-  height: 3px;
+  width: 300px !important;
+  height: 2px;
   background: linear-gradient(90deg, transparent 0%, #FFFF00 20%, #FFFF00 80%, transparent 100%);
-  transform: translateX(-50%);
+  transform: translateX(-50%) !important;
 }
 
 .section-subtitle {
-  font-size: 1.1rem;
-  color: #aaa;
+  font-size: 1.2rem;
+  color: #ffffff;
   margin-bottom: 60px;
   text-align: center;
 }
 
 /* Introduction Section */
 .intro-section {
-  background: rgba(23, 22, 31, 0.95);
+  background: #121018;
 }
 
 .intro-description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #ddd;
   margin-bottom: 50px;
@@ -165,10 +165,10 @@
 }
 
 .intro-card-icon {
-  width: auto;
-  height: auto;
-  background: none;
-  border-radius: 0;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,8 +177,8 @@
 }
 
 .intro-card-icon i {
-  font-size: 2rem;
-  color: #FFFF00;
+  font-size: 1.8rem !important;
+  color: #FFFF00 !important;
 }
 
 .intro-card-content {
@@ -188,17 +188,18 @@
 
 .intro-card-content h3 {
   font-size: 1rem;
-  color: #FFFF00;
+  color: #ffffff;
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: center;
 }
 
 .intro-card-content p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 /* Investment Vehicles Section */
@@ -229,8 +230,8 @@
 .vehicle-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.1);
-  border-radius: 50%;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,9 +250,10 @@
 
 .vehicle-title {
   font-size: 1.4rem;
-  color: #FFFF00;
+  color: #ffffff;
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: center;
 }
 
 .vehicle-subtitle {
@@ -262,10 +264,11 @@
 }
 
 .vehicle-description {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .vehicle-details {
@@ -364,15 +367,15 @@
 }
 
 .governance-item h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #FFFF00;
   margin: 0;
   font-weight: 600;
 }
 
 .governance-item p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin: 0;
 }
@@ -405,8 +408,8 @@
 .value-creation-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.1);
-  border-radius: 50%;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,14 +427,15 @@
 }
 
 .value-creation-title {
-  font-size: 1.4rem;
-  color: #FFFF00;
+  font-size: 1.2rem;
+  color: #ffffff;
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: center;
 }
 
 .value-creation-subtitle {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #aaa;
   margin-bottom: 15px;
   font-weight: 600;
@@ -439,10 +443,11 @@
 }
 
 .value-creation-description {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin-bottom: 25px;
+  text-align: left;
 }
 
 .value-creation-details {
@@ -451,9 +456,9 @@
 
 .detail-point {
   margin-bottom: 12px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #ddd;
-  line-height: 1.4;
+  line-height: 1.7;
 }
 
 .detail-point span {
@@ -614,10 +619,11 @@
 }
 
 .ecosystem-item p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin: 0;
+  text-align: left;
 }
 
 /* Mobile Responsive */
@@ -631,7 +637,16 @@
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  
+  .section-title::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 80% !important;
   }
 
   .intro-cards {
@@ -664,7 +679,14 @@
   .ecosystem-diagram {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 30px;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .ecosystem-item {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
   }
   
   .ecosystem-item.source,
@@ -672,12 +694,33 @@
   .ecosystem-item.exit {
     grid-column: 1;
     grid-row: auto;
+    max-width: 100%;
   }
   
   .ecosystem-center {
-    grid-column: 1;
-    grid-row: auto;
-    order: -1;
+    display: none;
+  }
+  
+  .ecosystem-hub {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .hub-content h3 {
+    font-size: 1rem;
+  }
+  
+  .hub-content p {
+    font-size: 0.6rem;
+  }
+  
+  .ecosystem-item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .ecosystem-item p {
+    font-size: 1.1rem;
+    text-align: center;
   }
 
   .vehicles-grid {
@@ -706,5 +749,50 @@
 
   .vehicle-card {
     padding: 25px;
+  }
+}
+/* Small Mobile Optimizations */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* MacBook Air Optimizations */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+/* Small Mobile Ecosystem Optimizations */
+@media (max-width: 480px) {
+  .ecosystem-diagram {
+    gap: 15px;
+    padding: 0 5px;
+  }
+  
+  .ecosystem-item {
+    padding: 12px;
+  }
+  
+  .ecosystem-hub {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .hub-content h3 {
+    font-size: 0.9rem;
+  }
+  
+  .hub-content p {
+    font-size: 0.5rem;
+  }
+  
+  .ecosystem-item h3 {
+    font-size: 1rem;
+  }
+  
+  .ecosystem-item p {
+    font-size: 1rem;
   }
 }

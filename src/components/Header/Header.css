@@ -195,7 +195,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(23, 22, 31, 0.95);
+  background: #121018;
   border: none;
   border-radius: 8px;
   padding: 10px 0;
@@ -305,7 +305,7 @@
 
   .services-dropdown-menu {
     position: static;
-    background: rgba(23, 22, 31, 0.95);
+    background: #121018;
     border: none;
     border-radius: 4px;
     margin-top: 0;

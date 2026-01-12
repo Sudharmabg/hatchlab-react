@@ -26,31 +26,31 @@ const One = () => {
   const offerings = [
     {
       icon: "fas fa-lightbulb",
-      title: "Innovation & Digital Transformation",
+      title: "Innovation & digital transformation",
       description: "Reimagining business models and implementing digital platforms like AI and cloud to reengineer customer journeys.",
       features: ["Business Model Design", "Product Innovation", "Data Analytics & Insights"]
     },
     {
       icon: "fas fa-bullhorn",
-      title: "Brand & Market Strategy",
+      title: "Brand & market strategy",
       description: "Building compelling brand narratives and multi-channel marketing campaigns driven by behavioral insights.",
       features: ["Visual Identity & Positioning", "Strategic Communications", "Creative Direction"]
     },
     {
       icon: "fas fa-chart-line",
-      title: "Business Development & Sales Enablement",
+      title: "Business development & sales enablement",
       description: "Designing market strategies and enabling teams with tools, training, and performance metrics.",
       features: ["GTM Strategy & Execution", "Revenue Operations", "Sales Training & Tools"]
     },
     {
       icon: "fas fa-cogs",
-      title: "Operational Excellence",
+      title: "Operational excellence",
       description: "Focusing on process optimization, supply chain resilience, and scalability using lean methodologies and automation.",
       features: ["Process Re-engineering", "Supply Chain Optimization", "Organizational Design"]
     },
     {
       icon: "fas fa-user-tie",
-      title: "Executive Assistance & Managed Services",
+      title: "Executive assistance & managed services",
       description: "Providing executive support ranging from administrative management to stakeholder engagement and board reporting.",
       features: ["Executive Assistance", "Staff Augmentation", "Project Management Office"]
     }
@@ -146,7 +146,7 @@ const One = () => {
               <div className="phase-icon green">
                 <i className="fas fa-search"></i>
               </div>
-              <h3 className="phase-title">DISCOVER</h3>
+              <h3 className="phase-title">Discover</h3>
               <p className="phase-description">Deep-dive workshops to understand core objectives, competitive landscape, and run diagnostic assessments to prioritize root causes.</p>
               <div className="phase-output">
                 <span className="output-label">KEY OUTPUT</span>
@@ -159,7 +159,7 @@ const One = () => {
               <div className="phase-icon purple">
                 <i className="fas fa-drafting-compass"></i>
               </div>
-              <h3 className="phase-title">DESIGN</h3>
+              <h3 className="phase-title">Design</h3>
               <p className="phase-description">Collaborative solutioning to architect tailored strategies, frameworks, and implementation roadmaps that fit the client's unique culture.</p>
               <div className="phase-output">
                 <span className="output-label">KEY OUTPUT</span>
@@ -172,7 +172,7 @@ const One = () => {
               <div className="phase-icon pink">
                 <i className="fas fa-rocket"></i>
               </div>
-              <h3 className="phase-title">DELIVER</h3>
+              <h3 className="phase-title">Deliver</h3>
               <p className="phase-description">Hands-on execution alongside client teams. We don't just advise; we roll up our sleeves, managing change and ensuring capability transfer.</p>
               <div className="phase-output">
                 <span className="output-label">KEY OUTPUT</span>
@@ -185,7 +185,7 @@ const One = () => {
               <div className="phase-icon orange">
                 <i className="fas fa-chart-bar"></i>
               </div>
-              <h3 className="phase-title">MEASURE</h3>
+              <h3 className="phase-title">Measure</h3>
               <p className="phase-description">Continuous monitoring of KPIs against baselines to validate outcomes, optimize performance, and scale successful initiatives across the organization.</p>
               <div className="phase-output">
                 <span className="output-label">KEY OUTPUT</span>
@@ -221,7 +221,7 @@ const One = () => {
               <div className="value-prop-icon">
                 <i className="fas fa-chess-knight"></i>
               </div>
-              <h3 className="value-prop-title">INTEGRATED STRATEGY</h3>
+              <h3 className="value-prop-title">Integrated Strategy</h3>
               <p className="value-prop-subtitle">Strategy to Execution</p>
               <p className="value-prop-description">We eliminate the friction between planning and doing. Our consultants work alongside builders and investors, ensuring strategies are actionable from day one.</p>
               
@@ -245,7 +245,7 @@ const One = () => {
               <div className="value-prop-icon">
                 <i className="fas fa-network-wired"></i>
               </div>
-              <h3 className="value-prop-title">PLATFORM LEVERAGE</h3>
+              <h3 className="value-prop-title">Platform Leverage</h3>
               <p className="value-prop-subtitle">Speed to Impact</p>
               <p className="value-prop-description">Clients tap into the full Hatchlab ecosystem. We leverage insights from our venture studio and capital from our investment arm to accelerate client growth.</p>
               
@@ -269,7 +269,7 @@ const One = () => {
               <div className="value-prop-icon">
                 <i className="fas fa-chart-bar"></i>
               </div>
-              <h3 className="value-prop-title">MEASURABLE OUTCOMES</h3>
+              <h3 className="value-prop-title">Measurable Outcomes</h3>
               <p className="value-prop-subtitle">De-risked Growth</p>
               <p className="value-prop-description">We prioritize practical implementation over theoretical frameworks. Our success is tied to tangible business outcomes, ensuring value throughout the transformation journey.</p>
               

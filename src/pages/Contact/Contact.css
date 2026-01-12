@@ -3,7 +3,7 @@
 .contact {
   position: relative;
   min-height: 100vh;
-  background: #002147 !important;
+  background: #121018 !important;
 }
 
 #contact-particles {
@@ -21,7 +21,7 @@
   position: relative;
   padding: 150px 0 100px;
   text-align: center;
-  background: #002147 !important;
+  background: #121018 !important;
 }
 
 .contact-hero > * {
@@ -63,7 +63,7 @@
 
 
 .contact-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--text-gray);
   max-width: 800px;
   margin: 0 auto;
@@ -72,7 +72,7 @@
 
 /* Contact Content */
 .contact-content {
-  background: #002147 !important;
+  background: #121018 !important;
 }
 
 .contact-grid {
@@ -88,25 +88,24 @@
 .section-heading {
   font-size: 2.5rem;
   color: var(--primary-yellow);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: 700;
+  text-align: center !important;
   position: relative;
   display: inline-block;
-  padding-bottom: 18px;
-  text-align: center;
-  width: 100%;
+  padding-bottom: 15px;
+  width: 100% !important;
 }
 
 .section-heading::after {
   content: '';
   position: absolute;
-  left: 50%;
+  left: 50% !important;
   bottom: 0;
-  width: 40%;
+  width: 300px !important;
   height: 2px;
   background: linear-gradient(90deg, transparent 0%, var(--primary-yellow) 20%, var(--primary-yellow) 80%, transparent 100%);
-  transform: translateX(-50%);
-  opacity: 0.85;
+  transform: translateX(-50%) !important;
 }
 
 /* Column containers */
@@ -140,21 +139,22 @@
 
 .card-icon,
 .step-number {
-  width: 50px;
-  height: 50px;
-  background: var(--primary-yellow);
-  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: #000;
+  color: #FFFF00 !important;
   font-weight: 700;
   font-size: 1.1rem;
 }
 
 .card-icon i {
-  font-size: 1.5rem;
+  font-size: 1.8rem !important;
+  color: #FFFF00 !important;
 }
 
 .card-content h3,
@@ -167,7 +167,7 @@
 
 .card-content p,
 .step-content p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: var(--text-gray);
   margin: 0;
@@ -216,7 +216,7 @@
 }
 
 .contact-modal-content {
-  background: #002147;
+  background: #121018;
   backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: 10px;
@@ -286,7 +286,7 @@
   }
 
   .contact-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .contact-grid {
@@ -296,13 +296,15 @@
 
   .section-heading {
     font-size: 1.8rem;
-    text-align: center;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
   }
 
   .section-heading::after {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 80% !important;
   }
 
   .engagement-card,
@@ -312,17 +314,17 @@
   }
 
   .card-icon {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
 
   .card-icon i {
-    font-size: 1.3rem;
+    font-size: 1.5rem !important;
   }
 
   .step-number {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     font-size: 1rem;
   }
 
@@ -333,7 +335,7 @@
 
   .card-content p,
   .step-content p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .cta-btn {
@@ -399,13 +401,13 @@
   }
 
   .card-icon {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   .step-number {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     font-size: 0.9rem;
   }
 
@@ -440,5 +442,11 @@
 
   .close-contact-modal {
     font-size: 24px;
+  }
+}
+/* MacBook Air Optimizations */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .section-heading {
+    font-size: 1.8rem;
   }
 }

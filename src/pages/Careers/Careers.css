@@ -3,7 +3,7 @@
 .careers {
   position: relative;
   min-height: 100vh;
-  background: #003153 !important;
+  background: #121018 !important;
 }
 
 #careers-particles {
@@ -23,7 +23,7 @@
 .careers > section:not(.careers-hero) {
   position: relative;
   z-index: 2;
-  background: #003153;
+  background: #121018;
 }
 
 /* Hero Section */
@@ -62,22 +62,29 @@
   text-align: center;
 }
 
-.internships-title {
+/* Section Title Styles */
+.section-title,
+.internships-title,
+.join-title {
   font-size: 2.5rem;
   color: var(--primary-yellow);
   font-weight: 700;
   margin-bottom: 50px;
+  text-align: center !important;
   position: relative;
   display: inline-block;
   padding-bottom: 15px;
+  width: 100% !important;
 }
 
-.internships-title::after {
+.section-title::after,
+.internships-title::after,
+.join-title::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 50% !important;
   bottom: 0;
-  width: 300px;
+  width: 300px !important;
   height: 2px;
   background: linear-gradient(
     90deg,
@@ -86,7 +93,7 @@
     var(--primary-yellow) 80%,
     transparent 100%
   );
-  transform: translateX(-50%);
+  transform: translateX(-50%) !important;
 }
 
 .internships-card {
@@ -107,7 +114,7 @@
 }
 
 .card-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 40px;
   font-weight: 400;
@@ -124,7 +131,7 @@
 }
 
 .benefits-list li {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 15px;
   position: relative;
@@ -146,7 +153,7 @@
 }
 
 .drop-text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -195,38 +202,13 @@
 }
 
 .join-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 30px;
   font-weight: 400;
 }
 
-.join-title {
-  font-size: 2.5rem;
-  color: var(--primary-yellow);
-  font-weight: 700;
-  margin: 0 0 60px 0;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 15px;
-}
 
-.join-title::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 220px;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--primary-yellow) 20%,
-    var(--primary-yellow) 80%,
-    transparent 100%
-  );
-  transform: translateX(-50%);
-}
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
@@ -260,11 +242,11 @@
   }
 
   .benefits-list li {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .drop-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .email-button {
@@ -337,5 +319,23 @@
   .email-button {
     font-size: 1rem;
     padding: 11px 28px;
+  }
+}
+/* Responsive Section Title Updates */
+@media (max-width: 768px) {
+  .section-title,
+  .internships-title,
+  .join-title {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  
+  .section-title::after,
+  .internships-title::after,
+  .join-title::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 80% !important;
   }
 }

@@ -1,7 +1,7 @@
 /* About Page Styles */
 
 .about {
-  background: #1d2951 !important;
+  background: #121018 !important;
   min-height: 100vh;
 }
 
@@ -12,7 +12,7 @@
   width: 100%;
   display: flex;
   position: relative;
-  background: #1d2951 !important;
+  background: #121018 !important;
   align-items: center;
   justify-content: center;
 }
@@ -53,12 +53,12 @@
 
 /* About Content */
 .about-content {
-  background: #1d2951 !important;
+  background: #121018 !important;
   padding: 60px 0;
 }
 
 .about-description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: var(--text-gray);
   max-width: 800px;
@@ -68,12 +68,12 @@
 
 /* Vision & Mission Cards */
 .vision-mission {
-  background: #1d2951 !important;
+  background: #121018 !important;
 }
 
 /* Philosophy Section */
 .philosophy-section {
-  background: #1d2951 !important;
+  background: #121018 !important;
   text-align: left;
 }
 
@@ -114,18 +114,19 @@
   margin: 0 auto 15px auto;
   position: relative;
   border: none;
-  background: none;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
 }
 
 .vm-card .card-icon i {
-  font-size: 2.2rem;
-  color: #FFFF00;
+  font-size: 1.8rem !important;
+  color: #FFFF00 !important;
 }
 
 @media (min-width: 769px) {
   .vm-card .card-icon i {
-    font-size: 2.2rem;
-    color: #FFFF00;
+    font-size: 1.8rem !important;
+    color: #FFFF00 !important;
   }
 }
 
@@ -134,7 +135,7 @@
 }
 
 .vm-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--text-white);
   margin-bottom: 15px;
   font-weight: 600;
@@ -142,7 +143,7 @@
 }
 
 .vm-card p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: var(--text-gray);
   margin: 0;
@@ -171,7 +172,7 @@ blockquote {
 }
 
 .quote-description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ffffff;
   line-height: 1.7;
   margin-top: 30px;
@@ -185,7 +186,7 @@ blockquote {
   }
 
   .about-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0 20px;
   }
 
@@ -205,7 +206,7 @@ blockquote {
   }
 
   .quote-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0 20px;
   }
 }
@@ -235,4 +236,57 @@ blockquote {
   ) !important;
   transform: translateX(-50%) !important;
   display: block !important;
+}
+/* Section Title Styles */
+.section-title {
+  font-size: 2.5rem;
+  color: #FFFF00;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-align: center !important;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+  width: 100% !important;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50% !important;
+  bottom: 0;
+  width: 150px !important;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #FFFF00 20%, #FFFF00 80%, transparent 100%);
+  transform: translateX(-50%) !important;
+}
+
+/* Mobile Responsive Section Titles */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  
+  .section-title::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 80% !important;
+  }
+}
+
+/* Small Mobile Optimizations */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* MacBook Air Optimizations */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
 }

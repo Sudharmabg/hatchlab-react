@@ -3,8 +3,8 @@
 
 :root {
   --primary-yellow: rgba(255, 255, 0,1);
-  --background-dark: #002147;
-  --header-bg: rgba(23, 22, 31, 0.95);
+  --background-dark: #121018;
+  --header-bg: #121018;
   --text-white: #ffffff;
   --text-gray: #ffffff;
   --card-bg: rgba(255, 255, 255, 0.05);
@@ -62,6 +62,7 @@ body {
   color: var(--text-white);
   line-height: 1.6;
   overflow-x: hidden;
+  background-color: var(--background-dark);
 }
 
 .App {
@@ -164,19 +165,21 @@ body {
 .section-title {
   font-size: 2.5rem;
   color: var(--primary-yellow);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-weight: 700;
   position: relative;
   display: inline-block;
-  padding-bottom: 18px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
 }
 
 .section-title::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
-  width: 100%;
+  width: 300px;
   height: 2px;
   background: linear-gradient(
     90deg,
@@ -185,6 +188,7 @@ body {
     var(--primary-yellow) 80%,
     transparent 100%
   );
+  transform: translateX(-50%);
 }
 
 .section-subtitle {
@@ -201,6 +205,10 @@ body {
   padding: 30px 25px;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+}
+
+.card p {
+  font-size: 1.2rem;
 }
 
 .card:hover {
@@ -233,11 +241,19 @@ body {
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .section-title::after {
+    width: 200px;
   }
   
   .section-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .card p {
+    font-size: 1.1rem;
   }
   
   .grid-2,
@@ -247,8 +263,23 @@ body {
   }
 }
 
+/* Small Mobile Optimizations */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+}
+
 /* MacBook Air Optimizations */
 @media (min-width: 1024px) and (max-width: 1440px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
   .grid-2 {
     grid-template-columns: repeat(2, 1fr);
     max-width: 900px;

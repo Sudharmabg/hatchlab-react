@@ -1,5 +1,5 @@
 .inception {
-  background-color: rgba(23, 22, 31, 0.95);
+  background-color: #121018;
   color: #fff;
   font-family: 'Lora', serif;
 }
@@ -91,12 +91,12 @@
 .section-title {
   font-size: 2.5rem;
   color: #FFFF00;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   font-weight: 700;
   text-align: center !important;
   position: relative;
   display: inline-block;
-  padding-bottom: 18px;
+  padding-bottom: 15px;
   width: 100% !important;
 }
 
@@ -105,16 +105,16 @@
   position: absolute;
   left: 50% !important;
   bottom: 0;
-  width: 250px !important;
+  width: 300px !important;
   height: 2px;
   background: linear-gradient(90deg, transparent 0%, #FFFF00 20%, #FFFF00 80%, transparent 100%);
   transform: translateX(-50%) !important;
 }
 
 .section-subtitle {
-  font-size: 1.1rem;
-  color: #aaa;
-  margin-bottom: 60px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 50px;
   text-align: left;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .intro-description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #ddd;
   margin-bottom: 50px;
@@ -200,19 +200,21 @@
 }
 
 .step-title {
-  font-size: 1rem;
-  color: #FFFF00;
+  font-size: 1.2rem;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 15px;
-  text-transform: uppercase;
+  text-transform: none !important;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .step-description {
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .step-output {
@@ -367,18 +369,20 @@
 }
 
 .service-card h3 {
-  font-size: 0.9rem;
-  color: #FFFF00;
+  font-size: 1.2rem;
+  color: #ffffff;
   margin: 5px 0;
   font-weight: 600;
+  text-align: center;
 }
 
 .service-card p {
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin: 10px 0;
   flex-grow: 1;
+  text-align: left;
 }
 
 .service-card .service-features {
@@ -404,10 +408,10 @@
 
 /* Value Cards */
 .value-icon {
-  width: auto;
-  height: auto;
-  background: none;
-  border-radius: 0;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,16 +424,16 @@
 }
 
 .value-icon i {
-  font-size: 2.5rem;
-  color: #FFFF00;
+  font-size: 1.8rem !important;
+  color: #FFFF00 !important;
 }
 
 .value-category {
-  font-size: 1rem;
-  color: #FFFF00;
+  font-size: 1.2rem;
+  color: #ffffff;
   margin-bottom: 10px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: none !important;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -443,10 +447,11 @@
 }
 
 .value-content p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .value-benefits {
@@ -466,7 +471,7 @@
 }
 
 .value-benefits li i {
-  color: #28a745 !important;
+  color: #ffffff !important;
   font-size: 0.8rem;
 }
 
@@ -489,11 +494,11 @@
 
 .deliverables-title,
 .benefits-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #FFFF00;
   margin-bottom: 30px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: none !important;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -530,10 +535,10 @@
 }
 
 .deliverable-icon {
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 0, 0.1);
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -541,12 +546,12 @@
 }
 
 .deliverable-icon i {
-  font-size: 1.5rem;
-  color: #FFFF00;
+  font-size: 1.8rem !important;
+  color: #FFFF00 !important;
 }
 
 .deliverable-card h4 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #fff;
   margin: 0;
   font-weight: 600;
@@ -578,8 +583,8 @@
 .benefit-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.1);
-  border-radius: 50%;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -593,15 +598,17 @@
 
 .benefit-card h4 {
   font-size: 1.1rem;
-  color: #FFFF00;
+  color: #ffffff;
   margin-bottom: 15px;
   font-weight: 600;
   letter-spacing: 1px;
+  text-align: center;
+  text-transform: none !important;
 }
 
 .benefit-card p {
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin: 0;
 }
@@ -638,10 +645,10 @@
 }
 
 .intro-card-icon {
-  width: auto;
-  height: auto;
-  background: none;
-  border-radius: 0;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 0, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -650,8 +657,8 @@
 }
 
 .intro-card-icon i {
-  font-size: 2rem;
-  color: #FFFF00;
+  font-size: 1.8rem !important;
+  color: #FFFF00 !important;
 }
 
 .intro-card-content {
@@ -660,18 +667,19 @@
 }
 
 .intro-card-content h3 {
-  font-size: 1rem;
-  color: #FFFF00;
+  font-size: 1.2rem !important;
+  color: #ffffff;
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: center;
 }
 
 .intro-card-content p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: #ddd;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -694,7 +702,7 @@
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center !important;
     width: 100% !important;
     display: block !important;
@@ -773,5 +781,19 @@
   .benefits-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+}
+
+/* Small Mobile Optimizations */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* MacBook Air Optimizations */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .section-title {
+    font-size: 1.8rem;
   }
 }
