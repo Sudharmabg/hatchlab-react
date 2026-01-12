@@ -270,7 +270,7 @@ const Home = () => {
                 key={index} 
                 className="card pillar-card"
                 style={{
-                  backgroundImage: `url(/images/what-we-do/${index === 0 ? 'udyog.png' : index === 1 ? 'investment-arm.png' : 'business-consultancy.png'})`,
+                  backgroundImage: `url(/images/what-we-do/${index === 0 ? 'udyog.png' : index === 1 ? 'investment-arm.jpg' : 'business-consultancy.png'})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   backgroundRepeat: 'no-repeat'
