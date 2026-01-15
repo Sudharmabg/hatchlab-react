@@ -34,7 +34,7 @@
 
 .vertical-label {
   font-size: 0.9rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -63,7 +63,7 @@
 }
 
 .word.white { color: #fff; }
-.word.yellow { color: #FFFF00; }
+.word.yellow { color: #e6e61e; }
 
 @keyframes dropAndBounce {
   0% { opacity: 0; transform: translateY(-100px); }
@@ -90,7 +90,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin-bottom: 50px;
   font-weight: 700;
   text-align: center !important;
@@ -107,7 +107,7 @@
   bottom: 0;
   width: 300px !important;
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, #FFFF00 20%, #FFFF00 80%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, #e6e61e 20%, #e6e61e 80%, transparent 100%);
   transform: translateX(-50%) !important;
 }
 
@@ -157,8 +157,8 @@
 
 .process-step:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .step-header {
@@ -182,13 +182,13 @@
 
 .step-icon i {
   font-size: 1.5rem;
-  color: #FFFF00;
+  color: #e6e61e;
 }
 
 .step-number {
   width: 40px;
   height: 40px;
-  background: #FFFF00;
+  background: #e6e61e;
   color: #000;
   border-radius: 50%;
   display: flex;
@@ -219,7 +219,7 @@
 
 .step-output {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 0, 0.2);
+  border: 1px solid rgba(230, 230, 30, 0.2);
   border-radius: 8px;
   padding: 15px;
   margin-top: auto;
@@ -228,7 +228,7 @@
 
 .output-label {
   font-size: 0.8rem;
-  color: #FFFF00;
+  color: #e6e61e;
   font-weight: 600;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -269,8 +269,8 @@
 
 .card:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .services-header {
@@ -311,14 +311,14 @@
 }
 
 .services-nav button:hover {
-  border-color: #FFFF00;
-  background: rgba(255, 255, 0, 0.12);
+  border-color: #e6e61e;
+  background: rgba(230, 230, 30, 0.12);
   transform: scale(1.07);
-  box-shadow: 0 0 18px rgba(255, 255, 0, 0.45);
+  box-shadow: 0 0 18px rgba(230, 230, 30, 0.45);
 }
 
 .services-nav button:hover i {
-  color: #FFFF00;
+  color: #e6e61e;
 }
 
 .services-carousel {
@@ -347,8 +347,8 @@
 
 .service-card:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .service-card .service-icon {
@@ -365,7 +365,7 @@
 
 .service-card .service-icon i {
   font-size: 1.5rem;
-  color: #FFFF00;
+  color: #e6e61e;
 }
 
 .service-card h3 {
@@ -397,10 +397,10 @@
 }
 
 .service-card .service-features li {
-  color: #FFFF00;
+  color: #e6e61e;
   padding: 4px 8px;
-  background: rgba(255, 255, 0, 0.1);
-  border: 1px solid rgba(255, 255, 0, 0.3);
+  background: rgba(230, 230, 30, 0.1);
+  border: 1px solid rgba(230, 230, 30, 0.3);
   border-radius: 12px;
   font-size: 0.7rem;
   white-space: nowrap;
@@ -410,7 +410,7 @@
 .value-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.2) !important;
+  background: rgba(230, 230, 30, 0.2) !important;
   border-radius: 50% !important;
   display: flex;
   align-items: center;
@@ -425,7 +425,7 @@
 
 .value-icon i {
   font-size: 1.8rem !important;
-  color: #FFFF00 !important;
+  color: #e6e61e !important;
 }
 
 .value-category {
@@ -481,8 +481,8 @@
 
 .value-card:hover {
   transform: translateY(-5px) !important;
-  border-color: #FFFF00 !important;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4) !important;
+  border-color: #e6e61e !important;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4) !important;
 }
 
 /* Outputs Section */
@@ -495,7 +495,7 @@
 .deliverables-title,
 .benefits-title {
   font-size: 1.2rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin-bottom: 30px;
   font-weight: 600;
   text-transform: none !important;
@@ -507,7 +507,7 @@
 
 .deliverables-title i,
 .benefits-title i {
-  color: #FFFF00;
+  color: #e6e61e;
   font-size: 1.2rem;
 }
 
@@ -530,14 +530,14 @@
 
 .deliverable-card:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .deliverable-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.2) !important;
+  background: rgba(230, 230, 30, 0.2) !important;
   border-radius: 50% !important;
   display: flex;
   align-items: center;
@@ -547,7 +547,7 @@
 
 .deliverable-icon i {
   font-size: 1.8rem !important;
-  color: #FFFF00 !important;
+  color: #e6e61e !important;
 }
 
 .deliverable-card h4 {
@@ -576,14 +576,14 @@
 
 .benefit-card:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .benefit-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.2) !important;
+  background: rgba(230, 230, 30, 0.2) !important;
   border-radius: 50% !important;
   display: flex;
   align-items: center;
@@ -593,7 +593,7 @@
 
 .benefit-icon i {
   font-size: 1.8rem;
-  color: #FFFF00;
+  color: #e6e61e;
 }
 
 .benefit-card h4 {
@@ -640,14 +640,14 @@
 
 .intro-card:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .intro-card-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.2) !important;
+  background: rgba(230, 230, 30, 0.2) !important;
   border-radius: 50% !important;
   display: flex;
   align-items: center;
@@ -658,7 +658,7 @@
 
 .intro-card-icon i {
   font-size: 1.8rem !important;
-  color: #FFFF00 !important;
+  color: #e6e61e !important;
 }
 
 .intro-card-content {

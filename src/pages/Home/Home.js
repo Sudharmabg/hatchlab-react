@@ -206,14 +206,14 @@ const Home = () => {
             <div className="line">
               <span className={`word white ${animatedWords ? 'bouncing' : ''}`}>Where</span>
               <span className={`word white ${animatedWords ? 'bouncing' : ''}`}>Big</span>
-              <span className={`word yellow ${animatedWords ? 'bouncing' : ''}`}>Ideas</span>
+              <span className={`word yellow ${animatedWords ? 'bouncing' : ''}`} style={{color: '#e6e61e'}}>Ideas</span>
               <span className={`word white ${animatedWords ? 'bouncing' : ''}`}>Meet</span>
             </div>
             <div className="line">
               <span className={`word white ${animatedWords ? 'bouncing' : ''}`}>Cool</span>
-              <span className={`word yellow ${animatedWords ? 'bouncing' : ''}`}>Tech</span>
+              <span className={`word yellow ${animatedWords ? 'bouncing' : ''}`} style={{color: '#e6e61e'}}>Tech</span>
               <span className={`word white ${animatedWords ? 'bouncing' : ''}`}>&</span>
-              <span className={`word yellow ${animatedWords ? 'bouncing' : ''}`}>Pro</span>
+              <span className={`word yellow ${animatedWords ? 'bouncing' : ''}`} style={{color: '#e6e61e'}}>Pro</span>
               <span className={`word white ${animatedWords ? 'bouncing' : ''}`}>Guidance</span>
             </div>
           </h1>
@@ -242,13 +242,13 @@ const Home = () => {
       {/* Why Hatchlab Section */}
       <section className="why-section section">
         <div className="container">
-          <h2 className="section-title">Why Hatchlab?</h2>
+          <h2 className="section-title" style={{color: '#e6e61e'}}>Why Hatchlab?</h2>
           <p className="section-subtitle">Our strategic differentiators in enterprise creation.</p>
           <div className="grid-2 why-cards-grid">
             {whyCards.map((card, index) => (
               <div key={index} className="card why-card">
                 <div className="why-card-icon">
-                  <i className={card.icon} style={{color: '#FFFF00'}}></i>
+                  <i className={card.icon} style={{color: '#e6e61e'}}></i>
                 </div>
                 <h3>{card.title}</h3>
                 <p>{card.description}</p>
@@ -279,7 +279,7 @@ const Home = () => {
                 onMouseLeave={() => setHoveredPillar(null)}
               >
                 <div className="pillar-card-icon">
-                  <i className={pillar.icon} style={{color: '#FFFF00'}}></i>
+                  <i className={pillar.icon} style={{color: '#e6e61e'}}></i>
                 </div>
                 <h3 className="pillar-title">{pillar.title}</h3>
                 <p className="pillar-description">{pillar.description}</p>

@@ -26,7 +26,7 @@ const Careers = () => {
         <div className="container">
           <h1 className="careers-main-title">
             <span className="white-text">Careers at </span>
-            <span className="yellow-text">Hatchlab</span>
+            <span className="yellow-text" style={{color: '#e6e61e'}}>Hatchlab</span>
           </h1>
         </div>
       </section>

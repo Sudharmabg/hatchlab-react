@@ -58,7 +58,7 @@
 }
 
 .word.yellow {
-  color: var(--primary-yellow);
+  color: #e6e61e;
 }
 
 @keyframes dropAndBounce {
@@ -91,7 +91,7 @@
 .hero-subtitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--primary-yellow);
+  color: #e6e61e;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
@@ -132,7 +132,7 @@
 .about-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary-yellow);
+  color: #e6e61e;
   margin-bottom: 50px;
   position: relative;
   display: inline-block;
@@ -151,8 +151,8 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--primary-yellow) 20%,
-    var(--primary-yellow) 80%,
+    #e6e61e 20%,
+    #e6e61e 80%,
     transparent 100%
   );
   transform: translateX(-50%);
@@ -167,7 +167,7 @@
 }
 
 .read-more {
-  color: var(--primary-yellow);
+  color: #e6e61e;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -179,7 +179,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: var(--primary-yellow);
+  color: #e6e61e;
   margin-bottom: 50px;
   font-weight: 700;
   text-align: center;
@@ -187,6 +187,10 @@
   display: inline-block;
   padding-bottom: 15px;
   width: 100%;
+}
+
+.why-section .section-title {
+  color: #E6D700 !important;
 }
 
 .section-title::after {
@@ -199,11 +203,15 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--primary-yellow) 20%,
-    var(--primary-yellow) 80%,
+    #e6e61e 20%,
+    #e6e61e 80%,
     transparent 100%
   );
   transform: translateX(-50%);
+}
+
+.why-section .section-title {
+  color: #E6D700;
 }
 
 .why-section .section-title::after {
@@ -216,8 +224,8 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--primary-yellow) 20%,
-    var(--primary-yellow) 80%,
+    #E6D700 20%,
+    #E6D700 80%,
     transparent 100%
   ) !important;
   transform: translateX(-50%) !important;
@@ -274,17 +282,29 @@
 }
 
 .why-card-icon {
-  font-size: 2.5rem;
-  color: #FFFF00;
-  margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background: rgba(230, 230, 30, 0.2) !important;
+  border-radius: 50% !important;
   display: flex;
+  align-items: center;
   justify-content: center;
+  margin: 0 auto 20px;
   transition: transform 0.3s ease;
+}
+
+.why-card-icon i {
+  font-size: 1.8rem !important;
+  color: #e6e61e !important;
+}
+
+.why-card:hover .why-card-icon {
+  transform: scale(1.1);
 }
 
 .pillar-card-icon {
   font-size: 3rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -382,7 +402,7 @@
   position: absolute;
   bottom: 15px;
   right: 15px;
-  background: var(--primary-yellow);
+  background: #e6e61e;
   color: #000;
   border: none;
   border-radius: 50%;
@@ -420,7 +440,7 @@
 }
 
 .pillars-footer strong {
-  color: var(--primary-yellow);
+  color: #e6e61e;
 }
 
 /* Our Initiatives Section */
@@ -441,7 +461,7 @@
 .initiative-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary-yellow);
+  color: #e6e61e;
   position: relative;
   display: inline-block;
   padding-bottom: 15px;
@@ -460,8 +480,8 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--primary-yellow) 20%,
-    var(--primary-yellow) 80%,
+    #e6e61e 20%,
+    #e6e61e 80%,
     transparent 100%
   );
   transform: translateX(-50%);
@@ -718,7 +738,7 @@
 .team-gallery-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary-yellow);
+  color: #e6e61e;
   padding: 0 40px;
   margin-bottom: 50px;
   position: relative;
@@ -743,8 +763,8 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--primary-yellow) 20%,
-    var(--primary-yellow) 80%,
+    #e6e61e 20%,
+    #e6e61e 80%,
     transparent 100%
   );
 }

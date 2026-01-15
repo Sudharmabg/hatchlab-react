@@ -1,15 +1,31 @@
+/* Global Icon Color Override */
+i[class*="fa-"],
+.fas,
+.far,
+.fab,
+.bi {
+  color: #e6e61e !important;
+}
+
+/* Specific overrides for non-yellow icons */
+.word.white,
+.white-text,
+.value-benefits li i {
+  color: #ffffff !important;
+}
+
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-yellow: rgba(255, 255, 0,1);
+  --primary-yellow: #e6e61e;
   --background-dark: #121018;
   --header-bg: #121018;
   --text-white: #ffffff;
   --text-gray: #ffffff;
   --card-bg: rgba(255, 255, 255, 0.05);
   --border-color: rgba(255, 255, 255, 0.08);
-  --yellow-border: rgba(255, 255, 0, 0.2);
+  --yellow-border: rgba(230, 230, 30, 0.2);
 }
 
 * {
@@ -172,6 +188,10 @@ body {
   padding-bottom: 15px;
   text-align: center;
   width: 100%;
+}
+
+.why-section .section-title {
+  color: #e6e61e !important;
 }
 
 .section-title::after {

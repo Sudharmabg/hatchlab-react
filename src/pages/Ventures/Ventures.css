@@ -34,7 +34,7 @@
 
 .vertical-label {
   font-size: 0.9rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -63,7 +63,7 @@
 }
 
 .word.white { color: #fff; }
-.word.yellow { color: #FFFF00; }
+.word.yellow { color: #e6e61e; }
 
 @keyframes dropAndBounce {
   0% { opacity: 0; transform: translateY(-100px); }
@@ -90,7 +90,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin-bottom: 50px;
   font-weight: 700;
   text-align: center !important;
@@ -107,7 +107,7 @@
   bottom: 0;
   width: 300px !important;
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, #FFFF00 20%, #FFFF00 80%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, #e6e61e 20%, #e6e61e 80%, transparent 100%);
   transform: translateX(-50%) !important;
 }
 
@@ -160,14 +160,14 @@
 
 .intro-card:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .intro-card-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.2) !important;
+  background: rgba(230, 230, 30, 0.2) !important;
   border-radius: 50% !important;
   display: flex;
   align-items: center;
@@ -178,7 +178,7 @@
 
 .intro-card-icon i {
   font-size: 1.8rem !important;
-  color: #FFFF00 !important;
+  color: #e6e61e !important;
 }
 
 .intro-card-content {
@@ -223,14 +223,14 @@
 
 .vehicle-card:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .vehicle-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.2) !important;
+  background: rgba(230, 230, 30, 0.2) !important;
   border-radius: 50% !important;
   display: flex;
   align-items: center;
@@ -245,7 +245,7 @@
 
 .vehicle-icon i {
   font-size: 1.8rem;
-  color: #FFFF00;
+  color: #e6e61e;
 }
 
 .vehicle-title {
@@ -277,7 +277,7 @@
   gap: 15px;
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 0, 0.2);
+  border-top: 1px solid rgba(230, 230, 30, 0.2);
 }
 
 .detail-item {
@@ -288,7 +288,7 @@
 
 .detail-label {
   font-size: 0.8rem;
-  color: #FFFF00;
+  color: #e6e61e;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -318,13 +318,13 @@
 }
 
 .governance-column:hover {
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .governance-column-title {
   font-size: 1.2rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin-bottom: 25px;
   font-weight: 600;
   display: flex;
@@ -334,7 +334,7 @@
 
 .governance-column-title i {
   font-size: 1.4rem;
-  color: #FFFF00;
+  color: #e6e61e;
 }
 
 .governance-items {
@@ -345,7 +345,7 @@
 
 .governance-item {
   padding: 15px 0;
-  border-bottom: 1px solid rgba(255, 255, 0, 0.1);
+  border-bottom: 1px solid rgba(230, 230, 30, 0.1);
 }
 
 .governance-item:last-child {
@@ -361,14 +361,14 @@
 
 .governance-item-header i {
   font-size: 1rem;
-  color: #FFFF00;
+  color: #e6e61e;
   width: 20px;
   text-align: center;
 }
 
 .governance-item h4 {
   font-size: 1.2rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin: 0;
   font-weight: 600;
 }
@@ -401,14 +401,14 @@
 
 .value-creation-card:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .value-creation-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 0, 0.2) !important;
+  background: rgba(230, 230, 30, 0.2) !important;
   border-radius: 50% !important;
   display: flex;
   align-items: center;
@@ -423,7 +423,7 @@
 
 .value-creation-icon i {
   font-size: 1.8rem;
-  color: #FFFF00;
+  color: #e6e61e;
 }
 
 .value-creation-title {
@@ -462,7 +462,7 @@
 }
 
 .detail-point span {
-  color: #FFFF00;
+  color: #e6e61e;
   font-weight: 600;
 }
 
@@ -489,8 +489,8 @@
 
 .ecosystem-item:hover {
   transform: translateY(-5px);
-  border-color: #FFFF00;
-  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.4);
+  border-color: #e6e61e;
+  box-shadow: 0 10px 30px rgba(230, 230, 30, 0.3), 0 0 20px rgba(230, 230, 30, 0.4);
 }
 
 .ecosystem-item.source {
@@ -575,7 +575,7 @@
   left: -10px;
   right: -10px;
   bottom: -10px;
-  border: 2px solid #FFFF00;
+  border: 2px solid #e6e61e;
   border-radius: 50%;
   animation: pulse-ring 2s infinite;
 }
@@ -613,7 +613,7 @@
 
 .ecosystem-item h3 {
   font-size: 1.2rem;
-  color: #FFFF00;
+  color: #e6e61e;
   margin-bottom: 10px;
   font-weight: 600;
 }

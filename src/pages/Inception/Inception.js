@@ -139,9 +139,9 @@ const Inception = () => {
       <section className="hero-section">
         <div id="particles-js"></div>
         <div className="container">
-          <p className="vertical-label">VERTICAL 01</p>
+          <p className="vertical-label" style={{color: '#e6e61e'}}>VERTICAL 01</p>
           <h1 className={`hero-title ${animatedWords ? 'animated' : ''}`}>
-            <span className="word yellow">Hatchlab</span>
+            <span className="word yellow" style={{color: '#e6e61e'}}>Hatchlab</span>
             <span className="word white">Inception</span>
           </h1>
           <p className="hero-subtitle">The Venture Studio Incubator</p>

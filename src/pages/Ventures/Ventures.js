@@ -57,9 +57,9 @@ const Ventures = () => {
       <section className="hero-section">
         <div id="particles-js"></div>
         <div className="container">
-          <p className="vertical-label">VERTICAL 02</p>
+          <p className="vertical-label" style={{color: '#e6e61e'}}>VERTICAL 02</p>
           <h1 className={`hero-title ${animatedWords ? 'animated' : ''}`}>
-            <span className="word yellow">Hatchlab</span>
+            <span className="word yellow" style={{color: '#e6e61e'}}>Hatchlab</span>
             <span className="word white">Ventures</span>
           </h1>
           <p className="hero-subtitle">Investing in Innovation, Powering Growth</p>

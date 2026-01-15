@@ -69,9 +69,9 @@ const One = () => {
       <section className="hero-section">
         <div id="particles-js"></div>
         <div className="container">
-          <p className="vertical-label">VERTICAL 03</p>
+          <p className="vertical-label" style={{color: '#e6e61e'}}>VERTICAL 03</p>
           <h1 className={`hero-title ${animatedWords ? 'animated' : ''}`}>
-            <span className="word yellow">Hatchlab</span>
+            <span className="word yellow" style={{color: '#e6e61e'}}>Hatchlab</span>
             <span className="word white">One</span>
           </h1>
           <p className="hero-subtitle">Bridging Strategy & Execution</p>
@@ -89,7 +89,7 @@ const One = () => {
             {offerings.slice(0, 3).map((offering, index) => (
               <div key={index} className="service-card">
                 <div className="service-icon">
-                  <i className={offering.icon}></i>
+                  <i className={offering.icon} style={{color: '#e6e61e !important'}}></i>
                 </div>
                 <h3 className="service-title">{offering.title}</h3>
                 <p className="service-description">{offering.description}</p>
@@ -105,10 +105,10 @@ const One = () => {
             <h2 className="section-title">Services & Offerings</h2>
             <div className="offerings-nav">
               <button className="offerings-prev" onClick={prevOffering} aria-label="Previous offering">
-                <i className="bi bi-arrow-left-square"></i>
+                <i className="bi bi-arrow-left-square" style={{color: '#e6e61e !important'}}></i>
               </button>
               <button className="offerings-next" onClick={nextOffering} aria-label="Next offering">
-                <i className="bi bi-arrow-right-square"></i>
+                <i className="bi bi-arrow-right-square" style={{color: '#e6e61e !important'}}></i>
               </button>
             </div>
           </div>
@@ -118,7 +118,7 @@ const One = () => {
             {offerings.slice(currentOfferingIndex, currentOfferingIndex + 3).map((offering, index) => (
               <div key={currentOfferingIndex + index} className="offering-card">
                 <div className="offering-icon">
-                  <i className={offering.icon}></i>
+                  <i className={offering.icon} style={{color: '#e6e61e !important'}}></i>
                 </div>
                 <h3 className="offering-title">{offering.title}</h3>
                 <p className="offering-description">{offering.description}</p>
@@ -196,15 +196,15 @@ const One = () => {
           
           <div className="engagement-features">
             <div className="feature-item">
-              <i className="fas fa-users"></i>
+              <i className="fas fa-users" style={{color: '#e6e61e !important'}}></i>
               <span>Co-Creation Model</span>
             </div>
             <div className="feature-item">
-              <i className="fas fa-rocket"></i>
+              <i className="fas fa-rocket" style={{color: '#e6e61e !important'}}></i>
               <span>Rapid Deployment</span>
             </div>
             <div className="feature-item">
-              <i className="fas fa-bullseye"></i>
+              <i className="fas fa-bullseye" style={{color: '#e6e61e !important'}}></i>
               <span>ROI Focused</span>
             </div>
           </div>
@@ -219,7 +219,7 @@ const One = () => {
           <div className="value-prop-grid">
             <div className="value-prop-card">
               <div className="value-prop-icon">
-                <i className="fas fa-chess-knight"></i>
+                <i className="fas fa-chess-knight" style={{color: '#e6e61e !important'}}></i>
               </div>
               <h3 className="value-prop-title">Integrated Strategy</h3>
               <p className="value-prop-subtitle">Strategy to Execution</p>
@@ -243,7 +243,7 @@ const One = () => {
             
             <div className="value-prop-card">
               <div className="value-prop-icon">
-                <i className="fas fa-network-wired"></i>
+                <i className="fas fa-network-wired" style={{color: '#e6e61e !important'}}></i>
               </div>
               <h3 className="value-prop-title">Platform Leverage</h3>
               <p className="value-prop-subtitle">Speed to Impact</p>
@@ -267,7 +267,7 @@ const One = () => {
             
             <div className="value-prop-card">
               <div className="value-prop-icon">
-                <i className="fas fa-chart-bar"></i>
+                <i className="fas fa-chart-bar" style={{color: '#e6e61e !important'}}></i>
               </div>
               <h3 className="value-prop-title">Measurable Outcomes</h3>
               <p className="value-prop-subtitle">De-risked Growth</p>

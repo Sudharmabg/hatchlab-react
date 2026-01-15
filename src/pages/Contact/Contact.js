@@ -51,7 +51,7 @@ const Contact = () => {
           <p className="contact-subtitle-small">Hatchlab One</p>
           <h1 className="contact-main-title">
             <span className="white-text">Partner With </span>
-            <span className="yellow-text">Hatchlab</span>
+            <span className="yellow-text" style={{color: '#e6e61e'}}>Hatchlab</span>
           </h1>
           <p className="contact-subtitle">
             Ready to build the future? Whether you are a founder, investor, or corporate leader, engage with our ecosystem today.
@@ -70,7 +70,7 @@ const Contact = () => {
               
               <div className="engagement-card">
                 <div className="card-icon">
-                  <i className="fas fa-lightbulb"></i>
+                  <i className="fas fa-lightbulb" style={{color: '#e6e61e !important'}}></i>
                 </div>
                 <div className="card-content">
                   <h3>Corporate Innovation</h3>
@@ -80,7 +80,7 @@ const Contact = () => {
               
               <div className="engagement-card">
                 <div className="card-icon">
-                  <i className="fas fa-handshake"></i>
+                  <i className="fas fa-handshake" style={{color: '#e6e61e !important'}}></i>
                 </div>
                 <div className="card-content">
                   <h3>Investment Partners</h3>
@@ -90,7 +90,7 @@ const Contact = () => {
               
               <div className="engagement-card">
                 <div className="card-icon">
-                  <i className="fas fa-network-wired"></i>
+                  <i className="fas fa-network-wired" style={{color: '#e6e61e !important'}}></i>
                 </div>
                 <div className="card-content">
                   <h3>Ecosystem Development</h3>
@@ -155,12 +155,12 @@ const Contact = () => {
             <h3>Get In Touch</h3>
             <div className="contact-info-item">
               <a href="tel:+918276057111">
-                <i className="fas fa-mobile-alt phone-icon"></i> +91 8276057111
+                <i className="fas fa-mobile-alt phone-icon" style={{color: '#e6e61e !important'}}></i> +91 8276057111
               </a>
             </div>
             <div className="contact-info-item">
               <a href="mailto:info@hatchlabinnovations.com">
-                <i className="fas fa-envelope email-icon"></i> info@hatchlabinnovations.com
+                <i className="fas fa-envelope email-icon" style={{color: '#e6e61e !important'}}></i> info@hatchlabinnovations.com
               </a>
             </div>
           </div>
