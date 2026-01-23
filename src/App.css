@@ -36,7 +36,7 @@ i[class*="fa-"],
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Cursor hidden only on desktop */
+/* Hide system cursor on desktop only */
 @media (hover: hover) and (pointer: fine) {
   * {
     cursor: none;
@@ -52,14 +52,7 @@ html {
 body {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  overscroll-behavior: auto;   /* FIXED */
-}
-
-/* Desktop smooth scrolling optimization */
-@media (hover: hover) and (pointer: fine) {
-  html, body {
-    scroll-behavior: smooth;
-  }
+  overscroll-behavior: auto;
 }
 
 .custom-cursor {
